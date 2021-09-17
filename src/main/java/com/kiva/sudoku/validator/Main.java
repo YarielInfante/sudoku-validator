@@ -17,6 +17,7 @@ public class Main {
 
         Pattern p = Pattern.compile("-{1,2}[A-Za-z]+=.+");
 // clean with empty rows
+
         for (String arg : args) {
             if (!p.matcher(arg).matches()) {
                 throw new IllegalArgumentException("arguments must follow format --{argument}={value}");
