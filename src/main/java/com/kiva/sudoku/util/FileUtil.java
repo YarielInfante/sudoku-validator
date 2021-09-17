@@ -26,13 +26,17 @@ public class FileUtil {
         if (!fileArgument[0].equals("--file")) {
             throw new IllegalArgumentException("No argument --file found.");
         }
+
+        if(fileArgument.length != 2){
+            throw new IllegalArgumentException("Argument must be --file=/path");
+        }
         return Paths.get(fileArgument[1]);
     }
 
     public static List<String> readCSVFileContent(Path filePath) throws IOException {
 
         if (!Files.exists(filePath)) {
-            throw new IllegalArgumentException("CSV File does not exist");
+                throw new IllegalArgumentException("CSV File does not exist");
         }
 
         return Files.readAllLines(filePath);

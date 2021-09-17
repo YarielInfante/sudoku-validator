@@ -13,7 +13,7 @@ public class SudokuValidator {
         this.grid = grid;
     }
 
-    public boolean isSudokuValid() {
+    public boolean isValid() {
         return isStructureValid()
                 && validateRows()
                 && validateColumns()
@@ -73,7 +73,7 @@ public class SudokuValidator {
 
 
     private boolean validateSubGrids() {
-        String[][] d2 = parseTo2dArray();
+        String[][] gridArray2d = parseTo2dArray();
 
         var rowStart = 0;
         var rowEnd = 2;
@@ -86,8 +86,8 @@ public class SudokuValidator {
             for (int rowIndex = rowStart; rowIndex <= rowEnd; rowIndex++) {
                 for (int columnIndex = columnStart; columnIndex <= columnEnd; columnIndex++) {
                     numbersCount.put(
-                            Integer.valueOf(d2[rowIndex][columnIndex]),
-                            numbersCount.getOrDefault(Integer.valueOf(d2[rowIndex][columnIndex]), 0) + 1
+                            Integer.valueOf(gridArray2d[rowIndex][columnIndex]),
+                            numbersCount.getOrDefault(Integer.valueOf(gridArray2d[rowIndex][columnIndex]), 0) + 1
                     );
                 }
             }

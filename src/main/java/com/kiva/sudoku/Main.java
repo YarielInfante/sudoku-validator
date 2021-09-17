@@ -18,7 +18,7 @@ public class Main {
 
             List<String> strings = FileUtil.readCSVFileContent(filePath);
 
-            boolean isSudokuValid = new SudokuValidator(strings).isSudokuValid();
+            boolean isSudokuValid = new SudokuValidator(strings).isValid();
 
             if (isSudokuValid)
                 System.out.println("Valid");

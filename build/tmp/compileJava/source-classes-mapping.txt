@@ -1,6 +1,0 @@
-com/kiva/sudoku/validator/SudokuValidator.java
- com.kiva.sudoku.validator.SudokuValidator
-com/kiva/sudoku/validator/FileUtil.java
- com.kiva.sudoku.validator.FileUtil
-com/kiva/sudoku/validator/Main.java
- com.kiva.sudoku.validator.Main
