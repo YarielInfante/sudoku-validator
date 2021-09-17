@@ -1,0 +1,17 @@
+{
+  "headers": {
+    "normalizedNames": {},
+    "lazyUpdate": null
+  },
+  "status": 403,
+  "statusText": "OK",
+  "url": "https://staging-api.augmedix.com:50009/api/v1/diagnoses?search=j45",
+  "ok": false,
+  "name": "HttpErrorResponse",
+  "message": "Http failure response for https://staging-api.augmedix.com:50009/api/v1/diagnoses?search=j45: 403 OK",
+  "error": {
+    "statusCode": 403,
+    "message": "Permission denied.",
+    "error": "Forbidden"
+  }
+}
